@@ -3,6 +3,7 @@ html {
 }
 body {
     display: block;
+    font-family: 'cairo', sans-serif;
 }
 #p_0{
     background-image: url("img/generic-background-0.png");
@@ -17,7 +18,7 @@ body {
 
 .p p {
     line-height: 800px;
-    font-family: sans-serif;
+    /*font-family: sans-serif;*/
     font-size: 64px;
     color: #fff;
     text-shadow: 0px 0px 32px #fff3db;
@@ -31,9 +32,28 @@ body {
     background-color: #545454;
 }
 
+#t_1, #t_1 p {
+    background-color:#ddd;
+    color: #555;
+}
+
+.t .panel {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    background-color:white;
+}
+
+.panel img {
+    width: inherit;
+    height: inherit;
+}
+
+
 .t {
     min-height: 200px;
-    font-family: sans-serif;
+    /*font-family: sans-serif;*/
     font-size: 24px;
     color: #bbb;
     padding-top: 10px;
@@ -42,6 +62,11 @@ body {
     box-shadow: 0px 0px 32px #fff;
     z-index: 1;
     position: relative;
+    text-align: center;
+}
+
+.t p {
+    text-align: center;
 }
 
 .t a {
@@ -67,6 +92,10 @@ body {
     .p p {
         font-size:64px;
         transition:250ms;
+    }
+    .t {
+        padding-left:120px;
+        padding-right:120px;
     }
 }
 
