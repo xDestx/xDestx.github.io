@@ -28,11 +28,15 @@ body {
     background-image: url("img/generic-title-_w-no-text.png");
 }
 
+#p_2 {
+    background-image: url("img/generic-background-1.png");
+}
+
 #t_0 {
     background-color: #545454;
 }
 
-#t_1, #t_1 p {
+#t_1, #t_1 p, #t_2, #t_2 p {
     background-color:#ddd;
     color: #555;
 }
@@ -51,6 +55,21 @@ body {
     width: inherit;
     height: inherit;
 }
+
+.panel.circle {
+    border-radius: 100%;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.panel.circle:hover {
+    transform: scale(1.1);
+}
+
+.panel.circle .text {
+    border-radius: 100%;
+}
+
 
 .panel .text {
     position:absolute;
