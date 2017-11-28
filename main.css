@@ -45,9 +45,41 @@ body {
     background-color:white;
 }
 
+/* I know these classes are set up incorrectly thank you */
+
 .panel img {
     width: inherit;
     height: inherit;
+}
+
+.panel .text {
+    position:absolute;
+    width: inherit;
+    height: inherit;
+    word-wrap: break-word;
+    color:rgba(0,0,0,0);
+    background-color:rgba(255,255,255,0);
+    transition: 250ms;
+    font-size: 16px;
+}
+
+.panel .text .title {
+    word-wrap: break-word;
+    color:rgba(0,0,0,0);
+    font-size: 22px;
+    margin-bottom: 10px;
+    transition: 250ms;
+}
+
+.panel .text:hover {
+    color:rgba(0,0,0,1);
+    background-color: rgba(255,255,255,0.5);
+    transition: 250ms;
+}
+
+.panel .text:hover .title {
+    color:rgba(0,0,0,1);
+    transition: 250ms;
 }
 
 
